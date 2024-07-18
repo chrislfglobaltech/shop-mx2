@@ -1,6 +1,5 @@
 const {Schema, model} = require('mongoose');
 
-
 // Product model
 const productSchema = new Schema({
   productId: {type: Number, required: true},
@@ -45,7 +44,6 @@ const inventorySchema = new Schema({
   productId: Number,
   quantity: Number,
   reservations: Array,
-  // create_at: {type: Date, default: Date.now}
 }, {
   collection: "inventories",
   timestamps: true,
