@@ -8,6 +8,6 @@ POST {{urlDev}}/v1/services/users
 Content-Type: application/json
 
 {
-  "username": "johndoe",
-  "email": "johndoe@gmail.com"
+  "username": "chris",
+  "email": "chris.nguyen@lfglobaltech.com"
 }
