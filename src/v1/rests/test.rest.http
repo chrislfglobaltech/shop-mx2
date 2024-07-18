@@ -1,0 +1,13 @@
+@urlDev=http://localhost:3051
+
+### checkStatus
+GET {{urlDev}}/checkstatus
+
+###
+POST {{urlDev}}/v1/services/users
+Content-Type: application/json
+
+{
+  "username": "johndoe",
+  "email": "johndoe@gmail.com"
+}

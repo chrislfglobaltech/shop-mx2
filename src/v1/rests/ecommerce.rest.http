@@ -1,0 +1,45 @@
+@urlDev=http://localhost:3051
+
+### put product
+PUT  {{urlDev}}/v1/ecommerce/products
+Content-Type: application/json
+
+{
+  "productId": 1001,
+  "code": "P-1001",
+  "name": "Product A",
+  "brand": "mx2",
+  "description": "Product A Description",
+  "specs": [
+    {
+      "k": "color",
+      "v": "red"
+    },
+    {
+      "k": "size",
+      "v": "medium"
+    }
+  ]
+}
+
+### put inventory
+PUT  {{urlDev}}/v1/ecommerce/inventories
+Content-Type: application/json
+
+{
+  "inventory": {
+    "productId": 1001,
+    "quantity": 1000,
+    "reservations": []
+  }
+}
+
+### add to cart
+PUT  {{urlDev}}/v1/ecommerce/addToCart
+Content-Type: application/json
+
+{
+  "productId": 1001,
+  "quantity": 3,
+  "userId": "669865048d27a228c6f9160f"
+}
